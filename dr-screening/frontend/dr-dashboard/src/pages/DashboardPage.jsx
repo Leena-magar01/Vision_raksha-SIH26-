@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { getStats } from "../utils/api";
 import {
   Activity, Users, AlertTriangle,
-  CheckCircle, Clock, RefreshCw
+  CheckCircle, RefreshCw
 } from "lucide-react";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
@@ -223,18 +223,7 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Demo mode notice */}
-      <div className="bg-[#E8F7F6] border border-[#22AEB0]/20 rounded-2xl p-4 flex items-start gap-3">
-        <Clock size={18} className="text-[#22AEB0] flex-shrink-0 mt-0.5" />
-        <div>
-          <p className="text-xs font-bold text-[#1F2F42] uppercase tracking-wider">Demo Mode Active</p>
-          <p className="text-xs text-[#657685] mt-0.5 leading-relaxed font-medium">
-            Running without trained model — all Grade 2 results are pre-set.
-            Train EfficientNet-B4 on Kaggle (P100 GPU, ~3–4 hrs) to activate real AI grading.
-            See <code className="bg-[#F7FAFB] px-2 py-0.5 rounded-lg text-[#1F2F42] font-mono text-[11px] border border-[#E1E9EC]">notebooks/train_dr_model.ipynb</code>
-          </p>
-        </div>
-      </div>
+
     </div>
   );
 }

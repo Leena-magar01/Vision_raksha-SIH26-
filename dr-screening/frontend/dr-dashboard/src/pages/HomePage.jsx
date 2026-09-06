@@ -1,5 +1,6 @@
 // src/pages/HomePage.jsx — VisionRaksha Landing Page
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import {
   Eye, Brain, UserCheck, Smartphone, Shield, Heart,
   ClipboardList, Camera, Search as SearchIcon,
@@ -81,9 +82,9 @@ function HeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-2">
-              <a href="#features" className="btn-primary gap-2 text-sm">
+              <Link to="/login" className="btn-primary gap-2 text-sm">
                 Get Started <ArrowRight size={16} />
-              </a>
+              </Link>
               <a href="#about" className="btn-outline gap-2 text-sm">
                 Learn More
               </a>
